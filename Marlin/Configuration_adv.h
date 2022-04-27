@@ -1634,7 +1634,7 @@
 
   #if ENABLED(BINARY_FILE_TRANSFER)
     // Include extra facilities (e.g., 'M20 F') supporting firmware upload via BINARY_FILE_TRANSFER
-    //#define CUSTOM_FIRMWARE_UPLOAD
+    #define CUSTOM_FIRMWARE_UPLOAD
   #endif
 
   /**
@@ -2593,6 +2593,7 @@
 
 // @section tmc
 
+#define DIAG_PINS_REMOVED
 /**
  * TMC26X Stepper Driver options
  *
